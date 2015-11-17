@@ -4,7 +4,8 @@
   "description": "WebDriverJS asapter for cucumber and chai",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd node_modules/protractor; npm install; mkdir -p spec; cp ../../test/environment.js spec; npm start"
   },
   "keywords": [
     "test",

@@ -9,7 +9,7 @@
   },
   "keywords": [
     "test",
-    "tesing",
+    "testing",
     "cucumber",
     "selenium",
     "webdriver",
@@ -27,5 +27,16 @@
   },
   "devDependencies": {
     "protractor": "^2.5.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebsorin/cucumber-chai-wd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebsorin/cucumber-chai-wd/issues"
+  },
+  "homepage": "https://github.com/sebsorin/cucumber-chai-wd#readme"
 }

@@ -1,6 +1,6 @@
 {
   "name": "cucumber-chai-wd",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "WebDriverJS asapter for cucumber and chai",
   "main": "index.js",
   "scripts": {
@@ -23,10 +23,14 @@
     "chai-as-promised": "^5.1.0",
     "lodash": "^3.10.1",
     "selenium-webdriver": "^2.47.0",
+    "util-arity": "^1.0.2",
     "webdriver": "0.0.1"
   },
   "devDependencies": {
-    "protractor": "^2.5.1"
+    "cucumber": "^0.9.5",
+    "gulp": "^3.9.1",
+    "gulp-protractor": "^2.2.0",
+    "protractor-cucumber-framework": "^0.3.4"
   },
   "directories": {
     "test": "test"

@@ -43,7 +43,7 @@ gulp.task('protractor_server', function(done) {
 gulp.task('e2e',['webdriver_update','protractor_server'], function(done){
 	gulp.src('test/cucumber/features/*.feature')
 		.pipe(protractor({
-		    //debug: true,
+		   // debug: true,
         configFile: "test/protractor.conf.js",
         args: ['--baseUrl', 'http://127.0.0.1:8081']
     })).on('error', function(e) {

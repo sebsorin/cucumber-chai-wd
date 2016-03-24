@@ -4,7 +4,8 @@ var fs = require('fs');
 
 
 exports.config = {
-  framework: 'cucumber',
+  framework: 'custom',
+  frameworkPath: require.resolve('protractor-cucumber-framework'),
   capabilities: {
     browserName: 'firefox'
   },

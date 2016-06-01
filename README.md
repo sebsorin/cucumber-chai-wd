@@ -17,6 +17,23 @@ module.exports = function cucumberChai() {
 }
 ```
 
+Or with optional chai modules:
+
+
+```js
+module.exports = function cucumberChai() {
+	// load chai with optional modules
+	var chai = chai = require('chai');
+	chai.use(require('chai-string'));
+
+	// instruments cucumber with cucumber chai wd
+	this.chai = chai;
+	require('cucumber-chai-wd').use(this);
+
+}
+```
+
+
 This will expose expect as a global function that will wrap any expectation in the control flow.
 
 This will also override the cucumber step definition to wrap there execution in controll flow so that step will wait until every expectation is fullfilled in the control flow

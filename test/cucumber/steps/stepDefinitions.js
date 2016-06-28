@@ -36,4 +36,15 @@ module.exports = function() {
     expect(colorList.get(2).getAttribute('value')).to.eventually.equal('red');
   });
 
+
+  this.Then(/^it should get an element from an array using should$/, function() {
+    var colorList = element.all(by.model('color'));
+
+    browser.get('index.html#/form');
+
+    colorList.get(0).getAttribute('value').should.eventually.equal('blue');
+    colorList.get(1).getAttribute('value').should.eventually.equal('green');
+    colorList.get(2).getAttribute('value').should.eventually.equal('red');
+  });
+
 };

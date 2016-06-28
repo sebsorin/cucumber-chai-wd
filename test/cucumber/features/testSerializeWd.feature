@@ -10,3 +10,4 @@ Feature: Running normal protractor tests with cucumber
   Scenario: Running Cucumber with Protractor get element in an array
     Given I run Cucumber with Protractor
     Then it should get an element from an array
+    Then it should get an element from an array using should

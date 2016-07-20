@@ -24,8 +24,7 @@
     "class-extend": "^0.1.2",
     "lodash": "^3.10.1",
     "selenium-webdriver": "^2.47.0",
-    "util-arity": "^1.0.2",
-    "webdriver": "0.0.1"
+    "util-arity": "^1.0.2"
   },
   "devDependencies": {
     "cucumber": "^0.9.5",

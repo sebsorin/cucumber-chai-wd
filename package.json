@@ -1,6 +1,6 @@
 {
   "name": "cucumber-chai-wd",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "WebDriverJS asapter for cucumber and chai",
   "main": "index.js",
   "scripts": {

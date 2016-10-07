@@ -11,3 +11,4 @@ Feature: Running normal protractor tests with cucumber
     Given I run Cucumber with Protractor
     Then it should get an element from an array
     Then it should get an element from an array using should
+    Then it should test non promise assertions as well

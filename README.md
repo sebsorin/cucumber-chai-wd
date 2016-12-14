@@ -2,9 +2,9 @@
 cucumber-chai-wd
 ================
 
-Adapter for cucumber and chai to WebdriverJS just as Jasminewd is for Jasmine.
+Adapter for cucumber and chai to WebDriverJS just as Jasminewd is for Jasmine.
 
-- Wraps expactations in control flow to have calls in sequences 
+- Wraps expectations in control flow to have calls in sequences 
 
 To use it, just load it in a support js of cucumber:
 
@@ -13,27 +13,19 @@ To use it, just load it in a support js of cucumber:
 module.exports = function cucumberChai() {
 	// instruments cucumber with cucumber chai wd
 	require('cucumber-chai-wd').use(this);
-
 }
 ```
 
-Or with optional chai modules:
-
-
+To prevent the chai should syntax from loading, use the following
 ```js
 module.exports = function cucumberChai() {
-	// load chai with optional modules
-	var chai = chai = require('chai');
-	chai.use(require('chai-string'));
-
 	// instruments cucumber with cucumber chai wd
-	this.chai = chai;
-	require('cucumber-chai-wd').use(this);
-
+	require('cucumber-chai-wd').use(this, false);
 }
 ```
 
+If you want to use chai modules, just register them to chai using `require('chai')` at any point.
 
 This will expose expect as a global function that will wrap any expectation in the control flow.
 
-This will also override the cucumber step definition to wrap there execution in controll flow so that step will wait until every expectation is fullfilled in the control flow
+This will also override the cucumber step definition to wrap there execution in control flow so that step will wait until every expectation is fulfilled in the control flow.

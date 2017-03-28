@@ -9,7 +9,7 @@ module.exports = {
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     'browserName':
-        (process.env.TEST_BROWSER_NAME || 'chrome'),
+        (process.env.TEST_BROWSER_NAME || 'firefox'),
     'version':
         (process.env.TEST_BROWSER_VERSION || 'ANY')
   },

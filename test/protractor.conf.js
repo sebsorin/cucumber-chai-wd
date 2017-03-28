@@ -7,7 +7,7 @@ exports.config = {
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'firefox'
   },
   cucumberOpts: {
     require: ['cucumber/support.js','cucumber/steps/*.js'],
